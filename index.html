@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Developer Portfolio</title>
+    <title>Ethan Howe - Full-Stack Software Developer</title>
     <style>
         * {
             margin: 0;
@@ -197,76 +197,6 @@
             color: var(--accent-color);
         }
 
-        /* Experience Section */
-        .experience {
-            background: rgba(30, 41, 59, 0.5);
-        }
-
-        .experience-timeline {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .experience-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .experience-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .experience-header {
-            margin-bottom: 1.5rem;
-        }
-
-        .experience-header h3 {
-            color: var(--accent-color);
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .company {
-            display: block;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--text-light);
-            margin-bottom: 0.3rem;
-        }
-
-        .location, .date {
-            display: inline-block;
-            color: rgba(248, 250, 252, 0.8);
-            font-size: 0.9rem;
-            margin-right: 1rem;
-        }
-
-        .experience-details {
-            list-style: none;
-            padding: 0;
-        }
-
-        .experience-details li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.8rem;
-            line-height: 1.6;
-            color: rgba(248, 250, 252, 0.9);
-        }
-
-        .experience-details li::before {
-            content: '▶';
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-size: 0.8rem;
-        }
-
         /* About Section */
         .about {
             background: rgba(30, 41, 59, 0.5);
@@ -303,10 +233,100 @@
             line-height: 1.8;
         }
 
+        .education-info {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+
+        .education-info h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Experience Section */
+        .experience {
+            background: rgba(30, 41, 59, 0.3);
+        }
+
+        .experience-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience-header {
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .experience-header h3 {
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .company {
+            display: block;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .location-date {
+            display: flex;
+            justify-content: space-between;
+            color: rgba(248, 250, 252, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .experience-details {
+            list-style: none;
+            padding: 0;
+        }
+
+        .experience-details li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: rgba(248, 250, 252, 0.9);
+        }
+
+        .experience-details li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 0.8rem;
+            top: 0.1rem;
+        }
+
         /* Skills Section */
+        .skills {
+            background: rgba(30, 41, 59, 0.5);
+        }
+
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
@@ -326,15 +346,16 @@
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.6rem;
         }
 
         .skill-tag {
             background: var(--primary-color);
             color: white;
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
+            font-weight: 500;
         }
 
         /* Projects Section */
@@ -368,12 +389,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 3rem;
             color: white;
         }
 
         .project-content {
-            padding: 1.5rem;
+            padding: 2rem;
         }
 
         .project-title {
@@ -382,9 +403,23 @@
             color: var(--accent-color);
         }
 
+        .project-role {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-date {
+            font-size: 0.85rem;
+            color: rgba(248, 250, 252, 0.7);
+            margin-bottom: 1rem;
+        }
+
         .project-description {
             margin-bottom: 1rem;
             opacity: 0.9;
+            line-height: 1.6;
         }
 
         .project-tech {
@@ -397,25 +432,10 @@
         .tech-tag {
             background: rgba(245, 158, 11, 0.2);
             color: var(--accent-color);
-            padding: 0.3rem 0.8rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 15px;
             font-size: 0.8rem;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .project-link {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        .project-link:hover {
-            color: var(--accent-color);
+            font-weight: 500;
         }
 
         /* Contact Section */
@@ -502,6 +522,15 @@
             .cta-buttons {
                 justify-content: center;
             }
+
+            .location-date {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+
+            .experience-card {
+                padding: 1.5rem;
+            }
         }
 
         /* Smooth scrolling */
@@ -528,10 +557,11 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">YourName</div>
+            <div class="logo">Ethan Howe</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -543,14 +573,15 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Your Name</h1>
-                <p class="subtitle">Full Stack Developer & Problem Solver</p>
+                <h1>Ethan Howe</h1>
+                <p class="subtitle">Full-Stack Software Developer</p>
                 <p class="description">
-                    Passionate about creating innovative solutions and building amazing user experiences. 
-                    I love turning complex problems into simple, beautiful, and intuitive solutions.
+                    Georgia Institute of Technology Computer Science graduate with expertise in full-stack development, 
+                    machine learning, and team leadership. Currently building innovative solutions at Stratocore 
+                    while passionate about creating user-centered applications that solve real-world problems.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#experience" class="btn btn-primary">View My Experience</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
@@ -567,19 +598,90 @@
                 </div>
                 <div class="about-text">
                     <p>
-                        I'm a passionate developer with [X] years of experience in creating digital solutions 
-                        that make a difference. I specialize in full-stack development and have a keen eye 
-                        for user experience design.
+                        I'm a passionate Full-Stack Software Developer with a Bachelor's degree in Computer Science from 
+                        the Georgia Institute of Technology. I graduated in May 2023 with a cumulative GPA of 3.55 and 
+                        a concentration in People and Intelligence.
                     </p>
                     <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
-                        open-source projects, or sharing my knowledge with the developer community. I believe 
-                        in writing clean, maintainable code and creating products that users love.
+                        Currently working at Stratocore in Atlanta, I've been leading the redesign of internal systems, 
+                        building dynamic user interfaces, and modernizing legacy codebases. My experience spans from 
+                        machine learning projects analyzing medical data to developing automated systems that significantly 
+                        improve productivity.
                     </p>
                     <p>
-                        I'm always excited to take on new challenges and collaborate with amazing teams 
-                        to build something extraordinary.
+                        As an Eagle Scout and proven project team leader, I bring strong leadership and organizational 
+                        skills to technical projects. I thrive in collaborative environments and am always excited to 
+                        tackle new challenges that push the boundaries of what's possible with technology.
                     </p>
+                    <div class="education-info">
+                        <h4>Education</h4>
+                        <strong>Georgia Institute of Technology</strong><br>
+                        Bachelor of Science in Computer Science<br>
+                        Concentration: People and Intelligence<br>
+                        Graduated: May 2023 | GPA: 3.55
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Full-Stack Software Developer</h3>
+                        <span class="company">Stratocore</span>
+                        <div class="location-date">
+                            <span class="location">Atlanta, Georgia</span>
+                            <span class="date">July 2023 - Present</span>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Redesigned and rebuilt the internal form management system, adding version-controlled question/answer tracking, a legacy form conversion algorithm, and a dynamic UI modeled after Google Forms</li>
+                        <li>Designed and implemented a lab usage tracking system by integrating event-based entry/exit pings with backend APIs for real-time calculations and data retrieval, ensuring accurate time used/booked metrics for billing and analytics</li>
+                        <li>Developed dynamic, backend-driven account processing forms by accessing form fields from a database table, enabling efficient updates and rapid client-specific customization</li>
+                        <li>Effectively managed multiple concurrent projects, balancing active development, bug fixes for features in testing, and incoming support-driven feature requests; while maintaining code quality and meeting all deadlines</li>
+                        <li>Modernized legacy ASP codebase by migrating functionality into reusable Vue 3 components, while enhancing UI design, improving usability, and elevating overall user experience</li>
+                        <li>Initiated and authored internal developer documentation to establish a centralized reference for application components and page structures, improving onboarding efficiency and cross-team collaboration</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Software Engineering Intern</h3>
+                        <span class="company">Salesloft</span>
+                        <div class="location-date">
+                            <span class="location">Atlanta, Georgia</span>
+                            <span class="date">May 2022 - August 2022</span>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed an automated Slack notifier bot to increase sales task visibility and increase the productivity for users</li>
+                        <li>Designed users' notification settings webpage and backend MVC to reflect front end changes</li>
+                        <li>Created a button in React to make a backend call to the Ruby API to bypass initial user onboarding</li>
+                        <li>Collaborated with the development team for sprint planning, implementation planning and goal setting meetings</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Information Technology Intern</h3>
+                        <span class="company">Caryn Health</span>
+                        <div class="location-date">
+                            <span class="location">Atlanta, Georgia</span>
+                            <span class="date">May 2020 - August 2020</span>
+                        </div>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed a chatbot using AWS Dialogue Flow to automate the customer service process and actively collect data</li>
+                        <li>Created a document scanning algorithm to automatically send personalized responses to client questions</li>
+                        <li>Designed and led 50+ orientation programs for new clients to introduce them to Caryn Health's online services</li>
+                        <li>Collaborated closely with upper-level management to design new functions for the Member Portal and ChatBot</li>
+                        <li>Applied my expertise in the enterprise technology as an on-call IT support specialist assisting in account set-up</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -588,42 +690,48 @@
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend Development</h3>
+                    <h3>Programming Languages</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">ASP</span>
+                        <span class="skill-tag">Ruby</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
+                    <h3>Frameworks & Libraries</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">JavaFX</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Sourcetree</span>
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Linux</span>
                         <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">IntelliJ</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Leadership & Achievements</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Eagle Scout</span>
+                        <span class="skill-tag">Junior Design Project Lead</span>
+                        <span class="skill-tag">Machine Learning Team Lead</span>
+                        <span class="skill-tag">Georgia Tech Graduate</span>
                     </div>
                 </div>
             </div>
@@ -636,61 +744,67 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">🚀</div>
+                    <div class="project-image">🧠</div>
                     <div class="project-content">
-                        <h3 class="project-title">Project Name 1</h3>
+                        <h3 class="project-title">Machine Learning: Diagnosis of Common Chest Diseases</h3>
+                        <div class="project-role">Team Lead</div>
+                        <div class="project-date">August 2022 – December 2022</div>
                         <p class="project-description">
-                            A brief description of your amazing project. Highlight the key features 
-                            and what makes it special.
+                            Led a team to design a convolutional neural network for classifying common chest diseases 
+                            found in patient X-rays. Optimized the CNN to increase detection and classification accuracy 
+                            for specific chest diseases. Parsed and cleaned over 25,000 data entries to ensure database 
+                            and CNN compatibility for training. Created meeting agendas to keep the group on track and 
+                            ensure all work was completed by deadlines.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">Data Processing</span>
+                            <span class="tech-tag">Team Leadership</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">💡</div>
+                    <div class="project-image">💚</div>
                     <div class="project-content">
-                        <h3 class="project-title">Project Name 2</h3>
+                        <h3 class="project-title">Junior Design: RRI Mental Health and Performance Application</h3>
+                        <div class="project-role">Team Lead</div>
+                        <div class="project-date">August 2021 – April 2022</div>
                         <p class="project-description">
-                            Another exciting project that showcases your skills and creativity. 
-                            Mention the problem it solves and its impact.
+                            Designed an application to implement and host the Reality Realization Institute's mental 
+                            health course. Organized meetings with team members to effectively coordinate workflow in 
+                            relation to deadlines. Created and implemented team incentives within the application to 
+                            engage users and encourage course completion.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Mobile Development</span>
+                            <span class="tech-tag">UI/UX Design</span>
+                            <span class="tech-tag">Project Management</span>
+                            <span class="tech-tag">Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🔧</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Internal Form Management System Redesign</h3>
+                        <div class="project-role">Professional Work at Stratocore</div>
+                        <div class="project-date">2023 - Present</div>
+                        <p class="project-description">
+                            Completely redesigned and rebuilt the internal form management system, adding version-controlled 
+                            question/answer tracking, legacy form conversion algorithms, and a dynamic UI inspired by Google Forms. 
+                            This system now handles dynamic, backend-driven forms with database integration for efficient 
+                            client customization.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🎯</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project Name 3</h3>
-                        <p class="project-description">
-                            Your third featured project. Focus on the technical challenges 
-                            you overcame and the value it provides.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
+                            <span class="tech-tag">Backend APIs</span>
+                            <span class="tech-tag">Database Design</span>
+                            <span class="tech-tag">Legacy Migration</span>
+                            <span class="tech-tag">ASP</span>
                         </div>
                     </div>
                 </div>
@@ -705,20 +819,20 @@
             <div class="contact-content">
                 <p>
                     I'm always open to discussing new opportunities, interesting projects, 
-                    or just having a chat about technology. Feel free to reach out!
+                    or just having a chat about technology and software development. Feel free to reach out!
                 </p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
-                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        <a href="mailto:ethanhowe2001@gmail.com">ethanhowe2001@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">💼</div>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                        <a href="https://linkedin.com/in/ethanwhowe" target="_blank">linkedin.com/in/ethanwhowe</a>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">🐙</div>
-                        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                        <div class="contact-icon">📱</div>
+                        <a href="tel:678-551-4114">678-551-4114</a>
                     </div>
                 </div>
             </div>
@@ -728,65 +842,4 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-
-        // Observe sections for animation
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
-
-        // Update active navigation link on scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+            <p>&copy; 2
